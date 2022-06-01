@@ -11,7 +11,5 @@ print("Found {} devices".format(len(nearby_devices)))
 for addr, name in nearby_devices:
     try:
         print("   {} - {}".format(addr, name))
-        print("OK")
     except UnicodeEncodeError:
         print("   {} - {}".format(addr, name.encode("utf-8", "replace")))
-        print("NOT OK")
