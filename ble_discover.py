@@ -1,7 +1,7 @@
 import asyncio
 from bleak import BleakClient
 
-address = "24:71:89:cc:09:05" # change to winter_24 MAC
+address = "CE:69:45:B5:8A:46" # change to winter_24 MAC
 HUMIDITY_SERVICE_UUID = "00002a6f-0000-1000-8000-00805f9b34fb"
 
 async def main(address):
