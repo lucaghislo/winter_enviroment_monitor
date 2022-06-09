@@ -1,0 +1,16 @@
+% plot winter data from data_readings.txt
+
+clear; clc;
+
+DATA = readtable("data_readings.txt", "VariableNamingRule","preserve");
+
+dataora = datetime(DATA.Var1, DATA.Var2, DATA.Var3, DATA.Var4, DATA.Var4, DATA.Var5, DATA.Var6)
+
+f = figure(Visible="on")
+
+hold on
+plot(dataora, DATA.Var7/100)
+plot(dataora, DATA.Var8/100)
+plot(dataora, DATA.Var9/1000)
+plot(dataora, DATA.Var10)
+hold off
