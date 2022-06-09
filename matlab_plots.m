@@ -2,7 +2,7 @@
 
 clear; clc;
 
-DATA = readtable("data_readings.txt", "VariableNamingRule","preserve");
+DATA = readtable("data_readings.txt", "VariableNamingRule", "preserve");
 
 dataora = datetime(DATA.Var1, DATA.Var2, DATA.Var3, DATA.Var4, DATA.Var4, DATA.Var5, DATA.Var6);
 
