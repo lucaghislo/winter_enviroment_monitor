@@ -25,7 +25,7 @@ async def main(address):
                 pressure_int = int.from_bytes(pressure_value, byteorder='big', signed=False)
                 battery_int = int.from_bytes(battery_value, byteorder='big', signed=False)
 
-                f = open("humidity_readings.txt", "a")
+                f = open("data_readings.txt", "a")
 
                 print("\n" + str(now))
                 print("   humidity: " + str(humidity_int/100) + " %")
