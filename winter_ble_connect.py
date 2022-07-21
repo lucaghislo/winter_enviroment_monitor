@@ -3,8 +3,8 @@ import time
 import datetime
 from bleak import BleakClient
 
-#address = "D3:EE:B3:62:3C:00" #winter_23 MAC
-address = "CE:69:45:B5:8A:46" #winter_24 MAC
+address = "D3:EE:B3:62:3C:00" #winter_23 MAC
+#address = "CE:69:45:B5:8A:46" #winter_24 MAC
 HUMIDITY_SERVICE_UUID = "00002a6f-0000-1000-8000-00805f9b34fb"
 TEMPERATURE_SERVICE_UUID = "00002a6e-0000-1000-8000-00805f9b34fb"
 PRESSURE_SERVICE_UUID = "00002a6d-0000-1000-8000-00805f9b34fb"
