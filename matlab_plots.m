@@ -6,12 +6,19 @@ DATA = readtable("data_readings.txt", "VariableNamingRule", "preserve");
 
 DATA = DATA(1:end, :);
 
-dataora = datetime(DATA.Var1, DATA.Var2, DATA.Var3, DATA.Var4, DATA.Var4, DATA.Var5, DATA.Var6);
+dataora = datetime(DATA.Var1, DATA.Var2, DATA.Var3, DATA.Var4, DATA.Var5, DATA.Var6);
 
-humidty = smoothdata(DATA.Var7/100);
-temperature = smoothdata(DATA.Var8/100);
-pressure = smoothdata(DATA.Var9/1000);
+% raw data
+humidty = DATA.Var7/100;
+temperature = DATA.Var8/100;
+pressure = DATA.Var9/1000;
 battery = DATA.Var10;
+
+% smooth data
+%humidty = smoothdata(DATA.Var7/100);
+%temperature = smoothdata(DATA.Var8/100);
+%pressure = smoothdata(DATA.Var9/1000);
+%battery = DATA.Var10;
 
 f = figure(Visible="on");
 
