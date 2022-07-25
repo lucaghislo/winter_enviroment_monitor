@@ -33,7 +33,7 @@ async def main(address):
                 print("temperature: " + str(temperature_int/100) + " °C")
                 print("   pressure: " + str(pressure_int/1000) + " mBar")
 
-                if(battery_int == 102):
+                if(battery_int > 100):
                     print("    battery: cable")
                 else:
                     print("    battery: " + str(battery_int) + " %")

@@ -25,26 +25,26 @@ f = figure(Visible="on");
 % humidity [%]
 subplot(2, 2, 1);
 plot(dataora, humidty, 'LineWidth',1.5, 'Color', 'red');
-title('Humidity [%]');
+title('\textbf{Humidity [$\%$]}');
 axis('padded')
 grid("on")
 
 % temperature [°C]
 subplot(2, 2, 2);
 plot(dataora, temperature, 'LineWidth',1.5, 'Color', 'green');
-title('Temperature [°C]');
+title('\textbf{Temperature [$^{\circ}$C]}');
 grid("on")
 
 % pressure [mBar]
 subplot(2, 2, 3);
 plot(dataora, pressure, 'LineWidth',1.5, 'Color', 'blue');
-title('Pressure [mBar]');
+title('\textbf{Pressure [mBar]}');
 grid("on")
 
 % battery [%]
 subplot(2, 2, 4);
 plot(dataora, battery, 'LineWidth',1.5, 'Color', 'magenta');
-title('Battery [%]');
+title('\textbf{Battery [$\%$]}');
 grid("on")
 
-sgtitle('Winter Enviroment Monitor');
+sgtitle('\textbf{GAPS Module Monitor}');
