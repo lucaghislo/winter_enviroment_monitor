@@ -55,3 +55,5 @@ title('\textbf{Battery [$\%$]}');
 grid("on")
 
 sgtitle('\textbf{GAPS Module Monitor}');
+
+exportgraphics(gcf,'winter_plot.pdf','ContentType','vector');
