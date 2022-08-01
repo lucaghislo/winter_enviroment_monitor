@@ -35,31 +35,31 @@ plot(dataora, humidty, 'LineWidth',1.5, 'Color', 'red');
 title('\textbf{Humidity [$\%$]}');
 axis('padded')
 grid("on")
-set(gca,'FontSize', 12)
+set(gca,'FontSize', 15)
 
 % temperature [°C]
 subplot(2, 2, 2);
 plot(dataora, temperature, 'LineWidth',1.5, 'Color', 'green');
 title('\textbf{Temperature [$^{\circ}$C]}');
 grid("on")
-set(gca,'FontSize', 12)
+set(gca,'FontSize', 15)
 
 % pressure [mBar]
 subplot(2, 2, 3);
 plot(dataora, pressure, 'LineWidth',1.5, 'Color', 'blue');
 title('\textbf{Pressure [mBar]}');
 grid("on")
-set(gca,'FontSize', 12)
+set(gca,'FontSize', 15)
 
 % battery [%]
 subplot(2, 2, 4);
 plot(dataora, battery, 'LineWidth',1.5, 'Color', 'magenta');
 title('\textbf{Battery [$\%$]}');
 grid("on")
-set(gca,'FontSize', 12)
+set(gca,'FontSize', 15)
 
-sgtitle('\textbf{GAPS Module Monitor}');
-set(gca,'FontSize', 12)
+sgtitle('\textbf{GAPS Module Monitor}', 'FontSize', 20);
+set(gca,'FontSize', 15)
 
-f.Position = [0 0 1920  1080];
+f.Position = [0 0 1800  1013];
 exportgraphics(gcf,'winter_plot.pdf','ContentType','vector');
