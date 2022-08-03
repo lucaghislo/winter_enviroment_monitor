@@ -58,6 +58,8 @@ title('\textbf{Battery [$\%$]}');
 grid("on")
 set(gca,'FontSize', 15)
 
+fit_batt = fitlm([1:size(battery, 1)], battery)
+
 sgtitle('\textbf{GAPS Module Monitor}', 'FontSize', 20);
 set(gca,'FontSize', 15)
 
